@@ -1,0 +1,19 @@
+﻿# popis podminek pro zadani vstupu;;;;;;
+# parameter type;aliases (array);description;required;default;minValue; maxValue
+Integer;-l|--left;left operand;TRUE;null;-2147483647;2147483647
+Integer;-r| --right;right operand;TRUE;NA;-2147483647;2147483647
+Integer;-p|--page;page of the file;FALSE;1;;
+Integer;--pp|--pagination;number of pages showed;FALSE;5;1;10
+Integer;-n | --num |--number;integer number;TRUE;;-1000;1000
+# parameter type;aliases (array);description;required;default;minValue; maxValue
+String;-f | --file;file name;TRUE;;4;255
+String;-c | --locale;lokalization;FALSE;CS;;
+String;-s|--source;source of file;TRUE;;4;255
+String;-d|--dest;destination of file;TRUE;;4;255
+# parameter type;aliases (array);description;required;default;enum values;
+Enum;-o |--oper | --operator;matematicke operace;TRUE;;PLUS | MINUS | MULTIPLY | DIVIDE;
+Enum;-u | --user;list of users;FALSE;USER NOT MENTIONED;USER NOT MENTIONED|JANA|PETR|LUCKA|EMA;
+# parameter type;aliases (array);description;required;default;parameter values true;parameter values false
+Boolean;--s|--switch;switching inputs;TRUE;;yes|1|on;no|0|off
+Boolean;-v|--verbose;way of output declaration;FALSE;TRUE;;
+Boolean;--se |--skipError;skipping error;FALSE;FALSE;;
