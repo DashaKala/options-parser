@@ -15,6 +15,7 @@ public class ReservedOpt extends BaseOpt<String> implements CmdInputVerifier {
             for (Map.Entry<String, CmdInputVerifier> entry : aliasesOpts.entrySet()) {
                 String key = entry.getKey();
                 CmdInputVerifier value = entry.getValue();
+                System.out.println(key + ": " + ((BaseOpt<?>) value).getDescription());
             }
         }
     }

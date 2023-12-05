@@ -3,6 +3,7 @@ package cz.bcpraha;
 import cz.bcpraha.config.*;
 
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 
 public class AliasObjectCreator {
